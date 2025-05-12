@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Learning Roadmap</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white shadow-lg sticky top-0 z-50" id="navbar">
+        <!-- Will be populated by js/components/navbar.js -->
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="app" class="container mx-auto px-4 py-8">
+        <!-- Content will be loaded dynamically based on the route -->
+        <div id="content" class="mt-6">
+            <!-- Content will be loaded here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12" id="footer">
+        <!-- Will be populated by js/components/footer.js -->
+    </footer>
+
+    <!-- Core JavaScript -->
+    <script src="js/utils/storage.js"></script>
+    <script src="js/utils/router.js"></script>
+    <script src="js/utils/api.js"></script>
+    
+    <!-- Components -->
+    <script src="js/components/navbar.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/components/assessment.js"></script>
+    <script src="js/components/roadmap.js"></script>
+    <script src="js/components/resources.js"></script>
+    <script src="js/components/projects.js"></script>
+    <script src="js/components/blogs.js"></script>
+    <script src="js/components/books.js"></script>
+    <script src="js/components/algorithms.js"></script>
+    
+    <!-- Pages -->
+    <script src="js/pages/home.js"></script>
+    <script src="js/pages/assessment.js"></script>
+    <script src="js/pages/roadmap.js"></script>
+    <script src="js/pages/resources.js"></script>
+    <script src="js/pages/projects.js"></script>
+    <script src="js/pages/blogs.js"></script>
+    <script src="js/pages/books.js"></script>
+    <script src="js/pages/algorithms.js"></script>
+    
+    <!-- Main App -->
+    <script src="js/app.js"></script>
+</body>
+</html>
